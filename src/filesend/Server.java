@@ -30,7 +30,7 @@ public class Server {
 			String filename = datain.readUTF();
 			
 			
-			FileOutputStream out = new FileOutputStream("./OUTPUT" + filename);
+			FileOutputStream out = new FileOutputStream("./OUTPUT/" + filename);
 			
 			while (filesize > 0) {
 				data = input.read(buffer, 0, Math.min(filesize, buffer.length));
